@@ -1,8 +1,20 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import { createMemoryHistory } from "history";
+import React from "react";
+import { Router } from "react-router-dom";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import "@testing-library/jest-dom";
+import App from "./App";
+
+test("full app rendering/navigating", async () => {
+  const history = createMemoryHistory();
+  history.push("/");
+  render(
+    <Router location={history.location} navigator={history}>
+      <App />
+    </Router>
+  );
+  // verify page content for expected route
+  // often you'd use a data-testid or role query, but this is also possible
+  expect(screen.queryByText(/登录/)).toBeInTheDocument();
 });
