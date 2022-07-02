@@ -6,11 +6,16 @@ import Cookies from "universal-cookie";
 import NavBar from "./components/NavBar";
 import Login from "./views/Login";
 import Home from "./views/Home";
+import Latest from "./views/Latest";
+import Recommend from "./views/Recommend";
+import Profile from "./views/Profile";
+import Collection from "./views/Collection";
+import Upload from "./views/Upload";
 
 const cookies = new Cookies();
 
 function App() {
-  console.log("APP!!!");
+  // console.log("APP!!!");
 
   const navigate = useNavigate();
 
@@ -32,6 +37,11 @@ function App() {
       <NavBar navigate={navigate} uid={uid} onLogout={handleLogout} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/recommend" element={<Recommend />} />
+        <Route path="/latest" element={<Latest />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/upload" element={<Upload />} />
         <Route path="/login" element={<Login navigate={navigate} onLogin={handleLogin} />} />
       </Routes>
     </Box>
