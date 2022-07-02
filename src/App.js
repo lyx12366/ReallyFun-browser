@@ -11,14 +11,7 @@ import Recommend from "./views/Recommend";
 import Profile from "./views/Profile";
 import Collection from "./views/Collection";
 import Upload from "./views/Upload";
-import LogIn from "./views/Login";
-import Register from "./views/Register";
-import Elimination from "./views/Elimination";
-import Action from "./views/Action";
-import Puzzle from "./views/Puzzle";
-import Shoot from "./views/Shoot";
-import Chess from "./views/Chess";
-import Casual from "./views/Casual";
+// import ClippedDrawer from "../components/Drawer";
 
 const cookies = new Cookies();
 
