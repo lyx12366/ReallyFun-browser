@@ -15,12 +15,14 @@ import MenuItem from "@mui/material/MenuItem";
 import ForumIcon from "@mui/icons-material/Forum";
 
 const pages = [
-  { label: "Home", to: "/" },
-  { label: "Dashboard", to: "/dashboard" },
+  { label: "首页", to: "/" },
+  { label: "热门推荐", to: "/recommend" },
+  { label: "最新上线", to: "/latest" },
 ];
 const settings = [
-  // { label: "Profile", to: "/profile" },
-  // { label: "Logout", to: "/logout" },
+  { label: "个人空间", to: "/profile" },
+  { label: "我的收藏", to: "/collection" },
+  { label: "上传游戏", to: "/upload" },
 ];
 
 class NavBar extends React.Component {
@@ -228,7 +230,7 @@ class NavBar extends React.Component {
                 </MenuItem>
               ))}
               <MenuItem
-                key="Logout"
+                key="注销"
                 onClick={(ev) => {
                   this.handleCloseUserMenu(ev);
                   this.handleLogout();
