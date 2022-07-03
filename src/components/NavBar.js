@@ -13,6 +13,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ForumIcon from "@mui/icons-material/Forum";
+import Searchbar from "./Searchbar";
 
 const pages = [
   { label: "首页", to: "/" },
@@ -266,6 +267,7 @@ class NavBar extends React.Component {
           <Toolbar disableGutters>
             {this.renderMD()}
             {this.renderXS()}
+            <Searchbar />
             {this.renderAvatar()}
           </Toolbar>
         </Container>
