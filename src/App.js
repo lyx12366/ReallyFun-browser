@@ -11,6 +11,13 @@ import Recommend from "./views/Recommend";
 import Profile from "./views/Profile";
 import Collection from "./views/Collection";
 import Upload from "./views/Upload";
+import Elimination from "./views/Elimination";
+import Action from "./views/Action";
+import Puzzle from "./views/Puzzle";
+import Shoot from "./views/Shoot";
+import Chess from "./views/Chess";
+import Casual from "./views/Casual";
+
 // import ClippedDrawer from "../components/Drawer";
 
 const cookies = new Cookies();
@@ -43,9 +50,13 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/collection" element={<Collection />} />
         <Route path="/upload" element={<Upload />} />
+<<<<<<< refs/remotes/XJTU-ReallyFun/main
         {/* <Route path="/login" element={<Login navigate={navigate} onLogin={handleLogin} />} /> */}
         <Route path="/login" element={<LogIn navigate={navigate} onLogin={handleLogin} />} />
         <Route path="/register" element={<Register />} />
+=======
+        <Route path="/login" element={<Login navigate={navigate} onLogin={handleLogin} />} />
+>>>>>>> 游戏分类侧边栏导航
         <Route path="/elimination" element={<Elimination />} />
         <Route path="/casual" element={<Casual />} />
         <Route path="/action" element={<Action />} />
