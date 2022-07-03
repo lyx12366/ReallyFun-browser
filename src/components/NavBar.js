@@ -13,6 +13,8 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import ForumIcon from "@mui/icons-material/Forum";
+import Searchbar from "./Searchbar";
+import History from "./History";
 
 const pages = [
   { label: "首页", to: "/" },
@@ -45,6 +47,8 @@ class NavBar extends React.Component {
   async handleLogout() {
     console.log("handleLogout");
     this.props.onLogout();
+    History.replace({ pathname: "/signin", state: {} });
+    History.go(0);
   }
 
   handleOpenNavMenu(event) {
@@ -230,7 +234,7 @@ class NavBar extends React.Component {
                 </MenuItem>
               ))}
               <MenuItem
-                key="注销"
+                key="logout"
                 onClick={(ev) => {
                   this.handleCloseUserMenu(ev);
                   this.handleLogout();
@@ -250,7 +254,8 @@ class NavBar extends React.Component {
               display: "block",
             }}
             component={Link}
-            to="/login"
+            // to="/login"
+            to="/signin"
           >
             登录
           </Button>
@@ -266,6 +271,7 @@ class NavBar extends React.Component {
           <Toolbar disableGutters>
             {this.renderMD()}
             {this.renderXS()}
+            <Searchbar />
             {this.renderAvatar()}
           </Toolbar>
         </Container>
