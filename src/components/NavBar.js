@@ -230,7 +230,7 @@ class NavBar extends React.Component {
                 </MenuItem>
               ))}
               <MenuItem
-                key="注销"
+                key="logout"
                 onClick={(ev) => {
                   this.handleCloseUserMenu(ev);
                   this.handleLogout();
