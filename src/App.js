@@ -11,14 +11,14 @@ import Recommend from "./views/Recommend";
 import Profile from "./views/Profile";
 import Collection from "./views/Collection";
 import Upload from "./views/Upload";
-import Elimination from "./views/Elimination";
-import Action from "./views/Action";
-import Puzzle from "./views/Puzzle";
-import Shoot from "./views/Shoot";
-import Chess from "./views/Chess";
-import Casual from "./views/Casual";
-
-// import ClippedDrawer from "../components/Drawer";
+import SignIn from "./views/SignIn";
+import SignUp from "./views/SignUp";
+// import Elimination from "./views/Elimination";
+// import Action from "./views/Action";
+// import Puzzle from "./views/Puzzle";
+// import Shoot from "./views/Shoot";
+// import Chess from "./views/Chess";
+// import Casual from "./views/Casual";
 
 const cookies = new Cookies();
 
@@ -62,7 +62,7 @@ function App() {
         <Route path="/action" element={<Action />} />
         <Route path="/puzzle" element={<Puzzle />} />
         <Route path="/chess" element={<Chess />} />
-        <Route path="/shoot" element={<Shoot />} />
+        <Route path="/shoot" element={<Shoot />} /> */}
       </Routes>
     </Box>
   );
