@@ -13,6 +13,12 @@ import Collection from "./views/Collection";
 import Upload from "./views/Upload";
 import SignIn from "./views/SignIn";
 import SignUp from "./views/SignUp";
+import Elimination from "./views/Elimination";
+import Action from "./views/Action";
+import Puzzle from "./views/Puzzle";
+import Shoot from "./views/Shoot";
+import Chess from "./views/Chess";
+import Casual from "./views/Casual";
 
 const cookies = new Cookies();
 
@@ -47,6 +53,12 @@ function App() {
         {/* <Route path="/login" element={<Login navigate={navigate} onLogin={handleLogin} />} /> */}
         <Route path="/signin" element={<SignIn navigate={navigate} onLogin={handleLogin} />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/elimination" element={<Elimination />} />
+        <Route path="/casual" element={<Casual />} />
+        <Route path="/action" element={<Action />} />
+        <Route path="/puzzle" element={<Puzzle />} />
+        <Route path="/chess" element={<Chess />} />
+        <Route path="/shoot" element={<Shoot />} />
       </Routes>
     </Box>
   );

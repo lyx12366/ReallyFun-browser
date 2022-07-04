@@ -266,7 +266,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <AppBar position="static" sx={{ height: 70, maxHeight: 70 }}>
+      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             {this.renderMD()}
