@@ -17,7 +17,6 @@ export default class Profile extends Component {
   }
 
   Get() {
-    console.log(this);
     axios
       .get("http://127.0.0.1:4523/m1/1221635-0-default/user/1")
       .then((response) => {
@@ -28,7 +27,6 @@ export default class Profile extends Component {
           avatar: response.data.data.avatar,
           auth: response.data.data.auth,
         });
-        console.log(this.state);
       })
       .catch((error) => {
         // handle error satuation
