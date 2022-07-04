@@ -47,7 +47,7 @@ class NavBar extends React.Component {
   async handleLogout() {
     console.log("handleLogout");
     this.props.onLogout();
-    History.replace({ pathname: "/signin", state: {} });
+    History.replace({ pathname: "/login", state: {} });
     History.go(0);
   }
 
@@ -254,8 +254,7 @@ class NavBar extends React.Component {
               display: "block",
             }}
             component={Link}
-            // to="/login"
-            to="/signin"
+            to="/login"
           >
             登录
           </Button>

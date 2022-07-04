@@ -14,7 +14,7 @@ import History from "../components/History";
 
 const theme = createTheme();
 
-class SignUp extends React.Component {
+class Register extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -103,7 +103,7 @@ class SignUp extends React.Component {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
-                  <Link href="/signin" variant="body2">
+                  <Link href="/login" variant="body2">
                     已有账号？点击登录
                   </Link>
                 </Grid>
@@ -116,4 +116,4 @@ class SignUp extends React.Component {
   }
 }
 
-export default SignUp;
+export default Register;
