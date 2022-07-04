@@ -11,8 +11,8 @@ import Recommend from "./views/Recommend";
 import Profile from "./views/Profile";
 import Collection from "./views/Collection";
 import Upload from "./views/Upload";
-import SignIn from "./views/SignIn";
-import SignUp from "./views/SignUp";
+import LogIn from "./views/Login";
+import Register from "./views/Register";
 import Elimination from "./views/Elimination";
 import Action from "./views/Action";
 import Puzzle from "./views/Puzzle";
@@ -51,8 +51,8 @@ function App() {
         <Route path="/collection" element={<Collection />} />
         <Route path="/upload" element={<Upload />} />
         {/* <Route path="/login" element={<Login navigate={navigate} onLogin={handleLogin} />} /> */}
-        <Route path="/signin" element={<SignIn navigate={navigate} onLogin={handleLogin} />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<LogIn navigate={navigate} onLogin={handleLogin} />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/elimination" element={<Elimination />} />
         <Route path="/casual" element={<Casual />} />
         <Route path="/action" element={<Action />} />
