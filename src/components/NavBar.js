@@ -255,6 +255,7 @@ class NavBar extends React.Component {
             }}
             component={Link}
             to="/login"
+            // to="/signin"
           >
             登录
           </Button>
