@@ -254,8 +254,8 @@ class NavBar extends React.Component {
               display: "block",
             }}
             component={Link}
-            // to="/login"
-            to="/signin"
+            to="/login"
+            // to="/signin"
           >
             登录
           </Button>
